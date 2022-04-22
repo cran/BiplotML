@@ -39,7 +39,7 @@ out <- sdv_MM(x = Methylation)
 }
 }
 \references{
-Babativa-Marquez, J.G. and Vicente-Villardon, J.L. (2021). Logistic biplot by conjugate gradient algorithms and iterated SVD. Mathematics 2021.
+Babativa-Marquez, J. G., & Vicente-Villardon, J. L. (2021). Logistic Biplot by Conjugate Gradient Algorithms and Iterated SVD. Mathematics, 9(16).
 
 Vicente-Villardon, J.L. and Galindo, M. Purificacion (2006), \emph{Multiple Correspondence Analysis and related Methods. Chapter: Logistic Biplots}. Chapman-Hall
 }

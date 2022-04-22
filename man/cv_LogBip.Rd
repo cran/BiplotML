@@ -36,14 +36,17 @@ Training error and generalization error for a logistic biplot model.
 This function run cross-validation for logistic biplot
 }
 \examples{
+\donttest{
 set.seed(1234)
 x <- simBin(n = 100, p = 50, k = 3, D = 0.5, C = 20)
-\donttest{
 # cross-validation with coordinate descendent MM algorithm
 cv_MM <- cv_LogBip(data = x$X, k=0:5, method = "MM", maxit = 1000)
 
 # cross-validation with CG Fletcher-Reeves algorithm
 cv_CG <- cv_LogBip(data = x$X, k=0:5, method = "CG", type = 1)
+
+# cross-validation with projection data and block coordinate descending algorithm
+cv_PB <- cv_LogBip(data = x$X, k=0:5, method = "PDLB", maxit = 1000)
 }
 }
 \references{
